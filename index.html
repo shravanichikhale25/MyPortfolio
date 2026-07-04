@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(3, 3, 86);
+            color: white;
+            font-family: arial ;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        section{
+            min-height: 80vh;
+            padding: 40px 80px;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(30, 30, 95);
+        }
+        nav ul{
+            display: flex ;
+            justify-content: center ;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: skyblue;
+            font-size: 1.05rem;
+        }
+        main hr{
+            border: 0;
+            background: whitesmoke;
+            height: 1.2px;
+            margin: 34px 84px;
+        }
+        .left{
+            font-size: 1.7rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+        .firstsection > div{
+            width: 30%;
+        }
+        .leftsection{
+            font-size: 3rem;
+        }
+        .rightsection img{
+            width: 75%;
+        }
+        .color{
+            color: rgb(75, 186, 118);
+        }
+        #about
+        {
+            margin: 10px 0;
+            align-items: center;
+        }
+            p{
+                font-size: 2rem;
+            }
+            h1{
+                font-size: 2.5rem;
+            }
+            table{
+                font-size: 2rem;
+            }
+        
+        #skill
+        {
+             margin: 10px 0;
+            align-items: center;
+        }
+            h1{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        #project,
+        #contact{
+            color:white;
+        }
+
+        h1{
+            margin-bottom:30px;
+            color:rgb(75,186,118);
+        }
+
+        table td{
+            padding:10px;
+        }
+
+        progress{
+            width:350px;
+            height:18px;
+        }
+
+        .project-box{
+            display:flex;
+            justify-content:space-around;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            width:250px;
+            background:rgb(30,30,95);
+            padding:20px;
+            border-radius:10px;
+            text-align:center;
+            margin:20px;
+        }
+
+        textarea{
+            width:350px;
+            padding:10px;
+            border-radius:5px;
+            border:none;
+        }
+
+        button{
+            padding:10px 25px;
+            background:rgb(75,186,118);
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:rgb(55,160,100);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Shravani's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#project">PROJECT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hii , my name is <span class="color">Shravani</span>
+                <br>
+                <div>Student of <span class="color"> Web Development </span></div>
+            </div>
+            <div class="rightsection">
+                <img src="pfimg.png" >
+            </div>
+        </section>
+        <hr>
+
+        <section id="about">
+            <h1>About Me</h1>
+
+            <p>
+                I'm Shravani, <br><br>
+                a Diploma student passionate about Web Development.<br>
+                I enjoy creating clean and responsive websites using HTML, CSS and JavaScript.
+            </p>
+            <br>
+            <table>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>:</td>
+                    <td>Shravani Vikas Chikhale</td>
+                </tr>           
+                <tr>
+                    <td><b>Email</b></td>
+                    <td>:</td>
+                    <td>shravanichikhale25@gmail.com</td>
+                </tr>           
+                <tr>
+                    <td><b>Location</b></td>
+                    <td>:</td>
+                    <td>Pune , Maharashtra, India</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+
+        <section id="skill">
+            <h1>My Skills</h1>
+
+            <p>HTML</p>
+            <progress value="90" max="100"></progress>
+
+            <p>CSS</p>
+            <progress value="85" max="100"></progress>
+
+            <p>JavaScript</p>
+            <progress value="75" max="100"></progress>
+
+            <p>C++</p>
+            <progress value="70" max="100"></progress>
+
+            <p>Git & GitHub</p>
+            <progress value="80" max="100"></progress>
+        </section>
+        <hr>
+
+        <section id="project">
+            <h1>Projects</h1>
+
+            <div class="project-box">
+                <div class="card">
+                   <h3>Portfolio</h3>
+                    <p>Personal Portfolio Website</p>
+                </div>
+
+                <div class="card">
+                    <h3>Calculator</h3>
+                   <p>Simple Calculator using JS</p>
+                </div>
+
+                <div class="card">
+                    <h3>Historical Places</h3>
+                    <p>Mini HTML Project</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+
+            <form>
+                <input type="text" placeholder="Your Name"><br><br>
+                <input type="email" placeholder="Your Email"><br><br>
+                <input type="text" placeholder="Subject"><br><br>
+                <textarea rows="6" cols="40" placeholder="Message"></textarea>
+                <br><br>
+                <button>Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
